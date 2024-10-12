@@ -11,7 +11,7 @@ function onEdit(e) {
 
   if (editedCol !== 16 && editedCol !== 18 && editedCol !== 19) {
     e.source.toast('Разрешено редактировать только столбцы P, R и S.', '', 3);
-    range.setValue(e.oldValue); // Revert the change
+    range.setValue(e.oldValue); // возвращаем старое значение
     return;
   }
 
